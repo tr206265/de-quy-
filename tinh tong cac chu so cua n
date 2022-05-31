@@ -1,0 +1,22 @@
+#include <iostream >
+using namespace std;
+int sum (int n ){
+	if(n<10){
+		return n;// dieu kien dung 
+	}
+	else{
+		return n%10+sum(n/10);
+	}
+}
+int main (){
+	int n;
+    cout <<"nhap n ";
+    cin >> n ;
+    n=(n<0)?-n:n;    // khu dau cua n int n;
+    cout<<" tong la "<<sum(n)<<endl;
+
+
+
+
+return 0;
+}
