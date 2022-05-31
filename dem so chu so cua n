@@ -1,0 +1,22 @@
+#include <iostream >
+using namespace std;
+int demchuso (int n ){
+	if (n<10) {
+		return 1;
+	}
+	else {
+		return 1+demchuso(n/10);
+	}
+		
+	}
+
+int main( ){
+	int n ;
+    cout<<"nhap ";
+    cin>>n ;
+    n=(n<0)? -n:n;  // khu dau cua n int n;
+    cout<< demchuso (n);
+	
+	
+	return 0;
+}
