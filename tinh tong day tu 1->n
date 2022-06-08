@@ -1,21 +1,73 @@
+//fibonacci
 #include <iostream >
+#include<math.h>
 using namespace std;
-int tong (int n ){
-	if (n==0) {
-		return 0;
-	}
-	else {
-		return tong (n-1)+n;
-	}
-		
-	}
-
-int main( ){
+ /* int bai1 (int n ){
+  	if( n==1)return 1;
+  	else return  bai1(n-1)+n;
+    }
+     double bai2(int n ){
+  	if(n==1) return 1;
+    else 
+	return (double)1 /n+ bai2(n-1);
+	  }*/
+	  // 1/2+ 1/4+ ...1/n 
+  	double bai3 (int n ){
+  		if(n==2) return 0.5;
+  		else 
+  		return 1.0/n+ bai3(n-2);
+	  }
+	  double bai4 (int n ){
+  		if(n==1) return 0.5;
+  		else 
+  		return 1.0/(n*(n+1))+ bai4(n-1);
+	  }
+	  // pow(x,n)
+		int bai8(int n ,int x){
+  		if(n==1) return x;
+  		else 
+  		return pow(x,n)+ bai8 (n-1,x);
+	  }
+	  	double bai9 (int n ){
+  		if(n==1) return 1;
+  		else 
+  		return 2.0/(n*(n+1)) + bai9(n-1);
+	  }
+	//bai 10 : n dau can 
+		double bai10 (int n ){
+  		if(n==0) return 0;
+  		else 
+  		return sqrt(2.0+bai10(n-1));
+	  }
+	// 11  can(n+can(n-1)+...+can1
+	  	double bai11 (int n ){
+  		if(n==1) return 1;
+  		else 
+  		return sqrt( n+bai11(n-1));
+	  }
+	  	float bai12 (int n ){
+  		if(n==1) return 0.5;
+  		else 
+  		return 1.0/bai12(n-1);
+	  }
+  // 12 co van de 
+  
+  
+  
+  
+  
+int main (){
+//	int x 
 	int n ;
-    cout<<"nhap ";
-    cin>>n ;
-    cout<<tong (n);
+	cin >> n;
+//	cin >>x;
+
+	//cout <<bai1(n);
+	cout << bai12(n);
 	
-	
-	return 0;
+
+
+
+
+return 0;
 }
