@@ -1,8 +1,7 @@
-//fibonacci
 #include <iostream >
 #include<math.h>
 using namespace std;
- /* int bai1 (int n ){
+  int bai1 (int n ){
   	if( n==1)return 1;
   	else return  bai1(n-1)+n;
     }
@@ -10,7 +9,7 @@ using namespace std;
   	if(n==1) return 1;
     else 
 	return (double)1 /n+ bai2(n-1);
-	  }*/
+	
 	  // 1/2+ 1/4+ ...1/n 
   	double bai3 (int n ){
   		if(n==2) return 0.5;
@@ -22,7 +21,7 @@ using namespace std;
   		else 
   		return 1.0/(n*(n+1))+ bai4(n-1);
 	  }
-	  // pow(x,n)
+	  // pow(x,n)🙌
 		int bai8(int n ,int x){
   		if(n==1) return x;
   		else 
